@@ -1,4 +1,4 @@
-#https://resonance-analytics.com/blog/deploying-dash-apps-on-azure
+# https://resonance-analytics.com/blog/deploying-dash-apps-on-azure
 
 import dash
 import dash_core_components as dcc
