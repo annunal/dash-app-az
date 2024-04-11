@@ -10,22 +10,24 @@ import plotly.express as px
 
 import pandas as pd
 
-df = pd.read_csv('assets/data/gapminderDataFiveYear.csv')
+#df = pd.read_csv('assets/data/gapminderDataFiveYear.csv')
 
 dash_app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
 app = dash_app.server
 
-dash_app.layout = html.Div([
-    dcc.Graph(id='graph-with-slider'),
-    dcc.Slider(
-        id='year-slider',
-        min=df['year'].min(),
-        max=df['year'].max(),
-        value=df['year'].min(),
-        marks={str(year): str(year) for year in df['year'].unique()},
-        step=None
-    )
-])
+#dash_app.layout = html.Div([
+#    dcc.Graph(id='graph-with-slider'),
+#    dcc.Slider(
+#        id='year-slider',
+#        min=df['year'].min(),
+#        max=df['year'].max(),
+#        value=df['year'].min(),
+#        marks={str(year): str(year) for year in df['year'].unique()},
+#        step=None
+#    )
+#])
+
+dash_app.layout=html.Div('Alessandro')
 
 
 @dash_app.callback(
